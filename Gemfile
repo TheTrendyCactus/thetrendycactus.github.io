@@ -12,7 +12,20 @@ source "https://rubygems.org"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # all supported plugins by GitHub Pages are included in "github-pages". (GitHub Pages doesn't support 3rd party plugins)
-gem "github-pages", "~> 231"
+source "https://rubygems.org"
+
+# Use standard Jekyll instead of the restricted GitHub wrapper
+gem "jekyll", "~> 4.3"
+
+group :jekyll_plugins do
+  # Add the core plugins MrGreen's theme uses natively
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
+  gem "jekyll-paginate"
+  gem "jekyll-redirect-from"
+end
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
@@ -22,7 +35,7 @@ install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
 end
 
 # Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.0", :install_if => Gem.win_platform?
+# gem "wdm", "~> 0.1.0", :install_if => Gem.win_platform?
 
 # HTTP server for local tests
 gem "webrick", "~> 1.7"
