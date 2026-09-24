@@ -46,15 +46,15 @@ page_data:
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
   category:
-    - title: "JekyII / Liquid"
-      type: id_jekyiiliquid
+    - title: "Art and Design"
+      type: id_artdesign
       color: "gray"
-    - title: "Web Design"
-      type: id_webdesign
-      color: "#F4A273"
-    - title: "Programming"
-      type: id_programming
-      color: "#62b462"
+    #- title: "Games"
+    #  type: id_games
+    #  color: "#a896d8"
+    #- title: "Programming"
+    #  type: id_programming
+    #  color: "#62b462"
 
   list:
     -
@@ -64,24 +64,24 @@ page_data:
       url: "https://stackoverflow.com/"
       info: "Stack Overflow is a question and answer website for professional and enthusiastic programmers."
 
-    # jekyiiliquid
-    - type: id_jekyiiliquid
+    # artdesign
+    - type: id_artdesign
       title: "Jekyll"
       url: "https://jekyllrb.com/"
       info: "Transform your plain text into static websites and blogs."
-    - type: id_jekyiiliquid
+    - type: id_artdesign
       title: "Jekyll Cheat Sheet"
       url: "https://cloudcannon.com/community/jekyll-cheat-sheet/"
       info: "There are so many Jekyll variables and filters to remember and it can be tricky to keep it all in your head. This cheat sheet serves as a quick reference of everything Jekyll can do."
-    - type: id_jekyiiliquid
+    - type: id_artdesign
       title: "Liquid for Designers"
       url: "https://github.com/Shopify/liquid/wiki/Liquid-for-Designers"
       info: "Liquid for Designers wiki on GitHub."
-    - type: id_jekyiiliquid
+    - type: id_artdesign
       title: "Liquid for Programmers"
       url: "https://github.com/Shopify/liquid/wiki/Liquid-for-Programmers"
       info: "Liquid for Programmers wiki on GitHub."
-    - type: id_jekyiiliquid
+    - type: id_artdesign
       title: "Liquid Reference"
       url: "https://shopify.dev/api/liquid/"
       info: "Liquid is a template language created by Shopify and written in Ruby. It is now available as an open source project on GitHub."
